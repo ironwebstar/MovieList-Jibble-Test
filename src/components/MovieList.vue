@@ -151,7 +151,8 @@ export default {
   },
   watch: {
     search(value) {
-      this.getMovies(value, this.curPage);
+      this.getMovies(value, 1);
+      this.curPage = 1;
     },
   },
 };
